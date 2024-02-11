@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Alert</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    <br>
+    <a href="ballistic-missile.html" class="brand" onclick="openNewPage(this)">Nuclear threat</a>
+    <br>
+    <br>
+    <br>
+    <a href="flooding.html" class="brand" onclick="openNewPage(this)">Flooding</a>
+    <br>
+    <br>
+    <br>
+    <a href="earthquake.html" class="brand" onclick="openNewPage(this)">Earthquake</a>
+    <br>
+    <br>
+    <br>
+    <a href="power-outage.html" class="brand" onclick="openNewPage(this)">Power outage</a>
+    <br>
+    <br>
+    <br>
+    <a href="terror-attack.html" class="brand" onclick="openNewPage(this)">Terror attack</a>
+    <br>
+    <br>
+    <br>
+    <a href="wildfire.html" class="brand" onclick="openNewPage(this)">Wildfire</a>
+    <br>
+    <br>
+    <br>
+
+    <audio id="backgroundMusic" src="/assets/sounds/emergency-alarm-with-reverb-29431.mp3" preload="auto">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        var audio = document.getElementById("backgroundMusic");
+        
+        
+        function playBackgroundMusic() {
+            audio.play();
+        }
+        
+        
+        function openNewPage(link) {
+            event.preventDefault(); 
+            playBackgroundMusic(); 
+            setTimeout(function() {
+                window.open(link.href, "_blank"); 
+            }, 100);
+        }
+    </script>
+</body>
+</html>

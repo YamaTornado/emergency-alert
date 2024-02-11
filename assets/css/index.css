@@ -1,0 +1,19 @@
+.brand{
+    background-color: rgb(255, 65, 65);
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px; 
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999; 
+    text-decoration: none;
+  }
+
+  .dismiss-button:hover {
+    background-color: rgb(254, 110, 110); 
+}
